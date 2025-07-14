@@ -20,7 +20,7 @@ export const TaskDetails: React.FC<TaskDetailsProps> = ({ task, onSave, onCancel
         <Box component="form" sx={{ padding: 2 }}>
             <TextField
                 name="title"
-                label="Заголовок"
+                label="Title"
                 value={editedTask.title}
                 onChange={handleChange}
                 fullWidth
@@ -28,7 +28,7 @@ export const TaskDetails: React.FC<TaskDetailsProps> = ({ task, onSave, onCancel
             />
             <TextField
                 name="description"
-                label="Описание"
+                label="Decription"
                 value={editedTask.description || ''}
                 onChange={handleChange}
                 fullWidth
@@ -49,10 +49,10 @@ export const TaskDetails: React.FC<TaskDetailsProps> = ({ task, onSave, onCancel
                 ))}
             </Select>
             <Button onClick={() => onSave(editedTask)} variant="contained" sx={{ mt: 2 }}>
-                Сохранить
+                Save
             </Button>
             <Button onClick={onCancel} sx={{ mt: 2, ml: 2 }}>
-                Отмена
+                Cancel
             </Button>
         </Box>
     );

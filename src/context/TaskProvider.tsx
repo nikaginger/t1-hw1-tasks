@@ -9,7 +9,7 @@ export const TaskProvider: React.FC<{ children: React.ReactNode }> = ({ children
             title: 'Task #1',
             category: 'Feature',
             status: 'To Do',
-            priority: 'Medium'
+            priority: 'High'
         },
         {
             id: '2',
